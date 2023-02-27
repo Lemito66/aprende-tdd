@@ -5,17 +5,12 @@ export const fizzbuzz = (number) => {
   if (Number.isNaN(number)) {
     throw new Error("The parameter must be a number");
   }
-  const multiplies = {3: 'fizz', 5: 'buzz'};
-  let output = '';
+  const multiplies = { 3: "fizz", 5: "buzz" };
+  let output = "";
 
-  Object
-    .entries(multiplies)
-    .forEach(([multiplier, word]) => {
-      if (number % multiplier === 0) output += word;
-    });
+  Object.entries(multiplies).forEach(([multiplier, word]) => {
+    if (number % multiplier === 0) output += word;
+  });
 
-  return output === '' ? number : output;
-  //return output === 'fizzbuzz' ? 'fizzbuzz' : output === '' ? number : output;
-
+  return output === "" ? number : output;
 };
-
