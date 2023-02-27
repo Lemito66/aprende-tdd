@@ -32,7 +32,6 @@ describe("fizzbuzz", () => {
     expect(fizzbuzz(12)).toBe("fizz");
   });
 
-
   // Este test ya no es necesario porque ya se cubre con el anterior
 
   /* it('should return 4 if number is 4', () => {
@@ -44,7 +43,7 @@ describe("fizzbuzz", () => {
     expect(fizzbuzz(10)).toBe("buzz");
   });
 
-  it('should return "fizzbuzz" if number is multiple of 3 and 5', () =>{
+  it('should return "fizzbuzz" if number is multiple of 3 and 5', () => {
     expect(fizzbuzz(15)).toBe("fizzbuzz");
   });
 });
