@@ -41,7 +41,10 @@ describe("fizzbuzz", () => {
 
   it('should return "buzz" if number is multiple of 5', () => {
     expect(fizzbuzz(5)).toBe("buzz");
+    expect(fizzbuzz(10)).toBe("buzz");
   });
 
-  it("should return ");
+  it('should return "fizzbuzz" if number is multiple of 3 and 5', () =>{
+    expect(fizzbuzz(15)).toBe("fizzbuzz");
+  });
 });
